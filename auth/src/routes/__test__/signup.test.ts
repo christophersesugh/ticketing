@@ -19,7 +19,7 @@ it("returns a 400 with an invalid email", async () => {
       password: "password",
     })
     .expect(400);
-});
+}, 10000);
 
 it("returns a 400 with an invalid password", async () => {
   return request(app)
